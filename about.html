@@ -29,6 +29,7 @@
 <body data-barba="wrapper">
     <!-- <div class="load-icon no-select"><svg width="14" height="14" viewBox="0 0 14 14"><path d="M13.76 7.004A7 7 0 0 0 7 14l-.004-.24A7 7 0 0 0 0 7l.24-.004A7 7 0 0 0 7 0l.004.24A7 7 0 0 0 14 7z" fill="#FFF" fill-rule="evenodd"/></svg></div> -->
     <div class="no-scroll-overlay"></div>
+    <!-- Loading Screen Animation -->
     <div class="loading-container">
         <div class="loading-screen">
             <div class="rounded-div-wrap top">
@@ -94,6 +95,7 @@
         </div>
     </div>
     <main class="main" id="about" data-barba="container" data-barba-namespace="about">
+        <!-- Hamburger Menu Button -->
         <div class="btn btn-hamburger">
             <div class="btn-click magnetic" data-strength="50" data-strength-text="25">
                 <div class="btn-fill"></div>
@@ -104,6 +106,7 @@
             </div>
         </div>
         <div class="overlay fixed-nav-back"></div>
+        <!-- Fixed Navigation Menu (Opens on Hamburger Click) -->
         <div class="fixed-nav theme-dark">
             <div class="fixed-nav-rounded-div">
                 <div class="rounded-div-wrap">
@@ -114,6 +117,7 @@
                 <div class="row nav-row">
                     <h5>Navigation</h5>
                     <div class="stripe"></div>
+                    <!-- Navigation Links -->
                     <ul class="links-wrap">
                         <li class="btn btn-link">
                             <a href="index.html" class="btn-click magnetic" data-strength="24" data-strength-text="12">
@@ -148,6 +152,7 @@
                 </div>
                 <div class="row social-row">
                     <div class="stripe"></div>
+                    <!-- Social Media Links -->
                     <div class="socials">
                         <h5>Socials</h5>
                         <ul>
@@ -172,8 +177,11 @@
                 </div>
             </div>
         </div>
+        <!-- Main Content Wrapper with Locomotive Scroll -->
         <div class="main-wrap" data-scroll-container>
+            <!-- Header Section with Navigation -->
             <header class="section default-header about-header" data-scroll-section>
+                <!-- Top Navigation Bar -->
                 <div class="nav-bar">
                     <div class="credits-top">
                         <div class="btn btn-link btn-left-top">
@@ -181,8 +189,7 @@
                                 <span class="btn-text">
                                     <div class="credit"><span>©</span></div>
                                     <div class="cbd"><span class="code-by">Code by </span><span class="dennis"><span
-                                                class="dennis-span">Hirendra</span> <span
-                                                class="snellenberg">Kurche</span></span>
+                                                class="dennis-span"> Hirendra Kurche</span> 
                                 </span>
                         </div>
                         </span>
@@ -220,17 +227,19 @@
                     </li>
                 </ul>
         </div>
+        <!-- Hero Title Section -->
         <div class="container medium once-in">
             <div class="row">
                 <div class="flex-col">
                     <center class="about-quote">
-                        <h1><span>Perfect From ,<span></span>Beginning to End
+                        <h1><span>Turning Complex Problems ,<span></span>into Simple Solutions
                             </span></h1>
                     </center>
                 </div>
             </div>
         </div>
         </header>
+        <!-- Animated Globe Section -->
         <section class="section no-padding line-globe once-in" data-scroll-section>
             <div class="container medium">
                 <div class="row">
@@ -252,6 +261,7 @@
                 </div>
             </div>
         </section>
+        <!-- About Image & Bio Section -->
         <section class="section about-image once-in" data-scroll-section>
             <div class="container">
                 <div class="row">
@@ -274,57 +284,126 @@
                             </svg>
                         </div>
                         <p data-scroll data-scroll-speed="-1" data-scroll-position="top" data-scroll-offset="0%, -50%">
-                           Although ,I'm a coder and frontend web developer, with a passion for design! but  I'm
-                            also the president of Nexus, a club dedicated to introducing school students to everything
-                            from UX/UI design to game development and web development! When I'm not coding, I love
-                            spending time outdoors cuddling those cute street doggos!
+                           I am a final-year B.Tech student at MANIT Bhopal, blending strong engineering skills with creative design. 
+                           As a <strong>Developer</strong> I have solved 650+ DSA problems and built scalable full-stack applications. 
+                           My background as a Design Head allows me to bridge the gap between complex code and intuitive user experiences.
                         </p>
                         <p data-scroll data-scroll-speed="-1" data-scroll-position="top" data-scroll-offset="0%, -50%">
-                            <span style="opacity: .5; display: block; padding-top: .5em;">Always Inspiring<span
+                            <span style="opacity: .5; display: block; padding-top: .5em;">Engineering Meets Design<span
                                     class="animate-dot">.</span><span class="animate-dot">.</span><span
                                     class="animate-dot">.</span></span>
                         </p>
                     </div>
-                    <div class="flex-col">
-                        <div class="single-about-image">
-                            <div class="overlay overlay-image" data-scroll data-scroll-speed="-2"
-                                data-scroll-position="top"></div>
-                            <div class="overlay"></div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
+        <!-- Services & Technical Skills Section -->
         <section class="section about-services" data-scroll-section>
             <div class="container">
                 <div class="row">
                     <div class="flex-col">
-                        <h2>I can help you with <span class="animate-dot">.</span><span
+                        <h2>Skills <span class="animate-dot">.</span><span
                                 class="animate-dot">.</span><span class="animate-dot">.</span></h2>
+                        <div class="stripe" style="margin-top: 1em; background-color: currentColor; opacity: 0.3;"></div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="flex-col">
-                        <h5>01</h5>
-                        <div class="stripe"></div>
-                        <h4>Development</h4>
-                        <p>I build scalable full-stack applications using React.js, Node.js, and MongoDB. I focus on optimized algorithms (DSA) and clean, responsive front-end code.</p>
+                
+                <!-- Skills Grid Container -->
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 4em 2em; margin-top: 0.5em; margin-bottom: 2em;">
+                    <!-- Row 1 Column 1 -->
+                    <div style="display: flex; flex-direction: column;">
+                        <h5 style="text-transform: uppercase; opacity: 0.5; font-size: 0.75em; margin-bottom: 0.5em; letter-spacing: 0.1em;">Languages</h5>
+                        <!-- <div style="width: 100%; height: 1px; background-color: currentColor; opacity: 0.5; margin-bottom: 1em;"></div> -->
+                        <p style="line-height: 1.6; margin: 0;">C++, JavaScript, SQL, Python</p>
                     </div>
-                    <div class="flex-col">
-                        <h5>02</h5>
-                        <div class="stripe"></div>
-                        <h4>Data Analytics</h4>
-                        <p>I turn raw numbers into actionable business insights. Using Python, SQL, and Power BI, I analyze trends to drive strategic decisions, like cost savings and sales growth.</p>
+                    <!-- Row 1 Column 2 -->
+                    <div style="display: flex; flex-direction: column;">
+                        <h5 style="text-transform: uppercase; opacity: 0.5; font-size: 0.75em; margin-bottom: 0.5em; letter-spacing: 0.1em;">Frameworks & Databases</h5>
+                        <!-- <div style="width: 100%; height: 1px; background-color: currentColor; opacity: 0.5; margin-bottom: 1em;"></div> -->
+                        <p style="line-height: 1.6; margin: 0;">React.js, Node.js, Express, MongoDB</p>
                     </div>
-                    <div class="flex-col">
-                        <h5>03</h5>
-                        <div class="stripe"></div>
-                        <h4>Design & UI/UX</h4>
-                        <p>My background as a Design Head allows me to create visually stunning assets. I use Figma and Photoshop to ensure that my technical solutions are also beautiful and user-friendly.</p>
+                    <!-- Row 1 Column 3 -->
+                    <div style="display: flex; flex-direction: column;">
+                        <h5 style="text-transform: uppercase; opacity: 0.5; font-size: 0.75em; margin-bottom: 0.5em; letter-spacing: 0.1em;">Analytics & Visualization</h5>
+                        <!-- <div style="width: 100%; height: 1px; background-color: currentColor; opacity: 0.5; margin-bottom: 1em;"></div> -->
+                        <p style="line-height: 1.6; margin: 0;">Power BI, Excel</p>
+                    </div>
+                    <!-- Row 2 Column 1 -->
+                    <div style="display: flex; flex-direction: column;">
+                        <h5 style="text-transform: uppercase; opacity: 0.5; font-size: 0.75em; margin-bottom: 0.5em; letter-spacing: 0.1em;">Core CS Concepts</h5>
+                        <!-- <div style="width: 100%; height: 1px; background-color: currentColor; opacity: 0.5; margin-bottom: 1em;"></div> -->
+                        <p style="line-height: 1.6; margin: 0;">Data Structures & Algorithms, OOP, DBMS, Operating Systems</p>
+                    </div>
+                    <!-- Row 2 Column 2 -->
+                    <div style="display: flex; flex-direction: column;">
+                        <h5 style="text-transform: uppercase; opacity: 0.5; font-size: 0.75em; margin-bottom: 0.5em; letter-spacing: 0.1em;">Tools & Design</h5>
+                        <!-- <div style="width: 100%; height: 1px; background-color: currentColor; opacity: 0.5; margin-bottom: 1em;"></div> -->
+                        <p style="line-height: 1.6; margin: 0;">Git, GitHub, Figma, Adobe Photoshop, Illustrator</p>
+                    </div>
+                    <!-- Row 2 Column 3 -->
+                    <div style="display: flex; flex-direction: column;">
+                        <h5 style="text-transform: uppercase; opacity: 0.5; font-size: 0.75em; margin-bottom: 0.5em; letter-spacing: 0.1em;">Soft Skills</h5>
+                        <!-- <div style="width: 100%; height: 1px; background-color: currentColor; opacity: 0.5; margin-bottom: 1em;"></div> -->
+                        <p style="line-height: 1.6; margin: 0;">Product Thinking, Leadership, Collaboration, Mentoring</p>
                     </div>
                 </div>
             </div>
         </section>
+        <!-- Professional Experience Section -->
+        <section class="section about-experience once-in" data-scroll-section>
+            <div class="container">
+                <div class="row">
+                    <div class="flex-col">
+                        <h2>Experience <span class="animate-dot">.</span><span class="animate-dot">.</span><span class="animate-dot">.</span></h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="flex-col">
+                        <div class="stripe" style="margin-top: 2em;"></div>
+                        <h5 style="margin-top: 3em;">May – June 2024</h5>
+                        <h4>Frontend Developer</h4>
+                        <p style="opacity: 0.7; margin-bottom: 0.5em;">Ableon Connect Private Limited</p>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="margin-bottom: 0.8em;">Developed 20+ responsive web components using analytics insights, significantly boosting overall user engagement.</li>
+                            <li style="margin-bottom: 0.8em;">Collaborated with cross-functional teams to optimize development workflows, successfully reducing deployment time.</li>
+                            <li>Leveraged user feedback to implement UI/UX enhancements, achieving approximately a 10% increase in page dwell time.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Achievements & Recognitions Section -->
+        <section class="section about-achievements once-in" data-scroll-section>
+            <div class="container">
+                <div class="row">
+                    <div class="flex-col">
+                        <h2>Achievements <span class="animate-dot">.</span><span class="animate-dot">.</span><span class="animate-dot">.</span></h2>
+                        <!-- <div class="stripe" style="margin-top: 1em;"></div> -->
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 2em;">
+                    <div class="flex-col" style="margin-bottom: 2em;">
+                        <h5 style="opacity: 0.5; font-size: 0.75em; margin-bottom: 0.5em;">01</h5>
+                        <div class="stripe" style="margin-bottom: 1em;"></div>
+                        <h4 style="margin-bottom: 0.8em;">Coding Excellence</h4>
+                        <p style="line-height: 1.6;">Solved 650+ DSA problems across LeetCode, Codeforces, and GfG.</p>
+                    </div>
+                    <div class="flex-col" style="margin-bottom: 2em;">
+                        <h5 style="opacity: 0.5; font-size: 0.75em; margin-bottom: 0.5em;">02</h5>
+                        <div class="stripe" style="margin-bottom: 1em;"></div>
+                        <h4 style="margin-bottom: 0.8em;">Hackathon Finalist</h4>
+                        <p style="line-height: 1.6;">Selected as a Finalist at the HPCL-Mittal Energy Limited (HMEL) National Hackathon, competing among 5000+ participants.</p>
+                    </div>
+                    <div class="flex-col" style="margin-bottom: 2em;">
+                        <h5 style="opacity: 0.5; font-size: 0.75em; margin-bottom: 0.5em;">03</h5>
+                        <div class="stripe" style="margin-bottom: 1em;"></div>
+                        <h4 style="margin-bottom: 0.8em;">Freelance Work</h4>
+                        <p style="line-height: 1.6;">Successfully freelanced for 2+ startups, delivering comprehensive design solutions and client-ready assets.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Leadership & Responsibilities Section -->
         <section class="section about-awwwards" data-scroll-section>
             <div class="container medium">
                 <div class="row">
@@ -336,15 +415,34 @@
                         <p>One of our Co-Founder giving student adivce</p>
                     </div>
                     <div class="flex-col">
-                        <h2>Nexus</h2>
-                        <p>I'm currently the president of an esteemed club where I get to help students learn all about
-                            web development and design. It's indeed a such rewarding experience!
-                        </p>
-<div class="stripe" style="background-color: var(--color-green);margin: 2em;"></div>
+                        <h2>Leadership & Responsibilities</h2>
+                        <div style="margin-top: 2em;">
+                            <h4>Design Head</h4>
+                            <p style="opacity: 0.7; margin-bottom: 0.5em;">Robotics Club & Roobaroo Society, MANIT Bhopal • June 2024 – Present</p>
+                            <ul style="list-style: none; padding: 0; margin-bottom: 2em;">
+                                <li style="margin-bottom: 0.8em;">Lead visual branding and design for 5+ technical events, reaching over 500 students across 20+ institutions.</li>
+                                <li>Mentor a 5-member design team in Photoshop, Figma, and Illustrator to ensure consistent creative delivery.</li>
+                            </ul>
+                        </div>
+                        <div style="margin-top: 2em;">
+                            <h4>Technical Event Coordinator</h4>
+                            <p style="opacity: 0.7; margin-bottom: 0.5em;">MANIT Bhopal • March 2024 – Present</p>
+                            <ul style="list-style: none; padding: 0; margin-bottom: 2em;">
+                                <li>Coordinate technical competitions for 100+ participants, managing logistics, technical troubleshooting, and evaluation workflows.</li>
+                            </ul>
+                        </div>
+                        <div style="margin-top: 2em;">
+                            <h4>Student Representative</h4>
+                            <p style="opacity: 0.7; margin-bottom: 0.5em;">Ministry of Education, EBSB Initiative • 2023</p>
+                            <ul style="list-style: none; padding: 0;">
+                                <li>Led a 40-member student delegation for the AICTE-MoE cultural and academic exchange program at NIT Karnataka.</li>
+                            </ul>
+                        </div>
+                        <div class="stripe" style="background-color: var(--color-green);margin: 2em;"></div>
                         <div class="btn btn-link">
-                            <a href="https://nexus-amity.github.io/Website-2023/" target="_blank" class="btn-click magnetic" data-strength="24" data-strength-        text="12" style="transform: rotate(0.001deg);">
+                            <a href="https://www.linkedin.com/in/hirendra-kurche-735a02228/" target="_blank" class="btn-click magnetic" data-strength="24" data-strength-text="12" style="transform: rotate(0.001deg);">
                                 <span class="btn-text" style="transform: rotate(0.001deg);">
-                                    <span class="btn-text-inner">Learn More</span>
+                                    <span class="btn-text-inner">View Profile</span>
                                 </span>
                             </a>
                         </div>
@@ -352,11 +450,13 @@
                 </div>
             </div>
         </section>
+        <!-- Footer Rounded Divider -->
         <div class="footer-rounded-div" data-scroll-section>
             <div class="rounded-div-wrap">
                 <div class="rounded-div"></div>
             </div>
         </div>
+        <!-- Footer Section with Contact CTA -->
         <div class="footer-wrap footer-footer-wrap theme-dark" data-scroll-section>
             <footer class="section footer" data-scroll data-scroll-speed="-4" data-scroll-position="bottom">
                 <div class="container medium">
@@ -382,7 +482,7 @@
                             <h2>
                                 <span>
                                     <div class="profile-picture"></div>
-                                    Let’s Do a Dance Together
+                                    Let's Build Something Amazing
                                 </span>
                             </h2>
                         </div>
@@ -428,12 +528,13 @@
                         </div>
                     </div>
                 </div>
+                <!-- Footer Bottom: Copyright & Social Links -->
                 <div class="container no-padding">
                     <div class="row bottom-footer">
                         <div class="flex-col">
                             <div class="credits">
                                 <h5>Version</h5>
-                                <p>2023 © Edition</p>
+                                <p>2025 © Hirendra Kurche</p>
                             </div>
                             <div class="time">
                                 <h5>Local time</h5>
@@ -457,6 +558,14 @@
                                             class="btn-click magnetic" data-strength="20" data-strength-text="10">
                                             <span class="btn-text">
                                                 <span class="btn-text-inner">LinkedIn</span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="btn btn-link btn-link-external">
+                                        <a href="https://www.behance.net/himanshukurche" target="_blank"
+                                            class="btn-click magnetic" data-strength="20" data-strength-text="10">
+                                            <span class="btn-text">
+                                                <span class="btn-text-inner">Behance</span>
                                             </span>
                                         </a>
                                     </li>
