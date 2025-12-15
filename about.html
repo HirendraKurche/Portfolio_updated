@@ -23,7 +23,7 @@
     <link href="assets/css/components.css" rel="stylesheet">
     <link href="assets/css/style-new.css" rel="stylesheet">
 
-    <link rel="icon" type="image/x-icon" href="https://i.postimg.cc/t7G0kJkp/image.png">
+    <link rel="icon" type="image/png" href="assets/img/logo_top.png">
 </head>
 
 <body data-barba="wrapper">
@@ -95,6 +95,59 @@
         </div>
     </div>
     <main class="main" id="about" data-barba="container" data-barba-namespace="about">
+        <!-- Floating Image Hover Effect -->
+        <div class="mouse-pos-list-image no-select">
+            <div class="mouse-pos-list-image-bounce overlay">
+                <div class="float-image-wrap">
+                    <!-- Experience Image -->
+                    <li class="mouse-pos-list-image-inner experience-hover visible">
+                        <div class="overlay overlay-image lazy"
+                            style="background-color: #DCD0C2; background-position: center center; background-repeat: no-repeat; background-size: cover;"
+                            data-bg="assets/img/Frontend Devloper.jpg">
+                        </div>
+                    </li>
+                    <!-- Achievement 1 Image -->
+                    <li class="mouse-pos-list-image-inner achievement-hover-1 visible">
+                        <div class="overlay overlay-image lazy"
+                            style="background-color: #E2D1D9; background-position: center center; background-repeat: no-repeat; background-size: cover;"
+                            data-bg="assets/img/coding.png">
+                        </div>
+                    </li>
+                    <!-- Achievement 2 Image -->
+                    <li class="mouse-pos-list-image-inner achievement-hover-2 visible">
+                        <div class="overlay overlay-image lazy"
+                            style="background-color: #B1A994; background-position: center center; background-repeat: no-repeat; background-size: cover;"
+                            data-bg="assets/img/energy quest.png">
+                        </div>
+                    </li>
+                    <!-- Achievement 3 Image -->
+                    <li class="mouse-pos-list-image-inner achievement-hover-3 visible">
+                        <div class="overlay overlay-image lazy"
+                            style="background-color: #C2C2C2; background-position: center center; background-repeat: no-repeat; background-size: cover;"
+                            data-bg="assets/img/behance.png">
+                        </div>
+                    </li>
+                    <!-- Leadership 1 Image -->
+                    <li class="mouse-pos-list-image-inner leadership-hover-1 visible">
+                        <div class="overlay overlay-image lazy"
+                            style="background-color: #DCD0C2; background-position: center center; background-repeat: no-repeat; background-size: cover;"
+                            data-bg="assets/img/AUTOMAX EVENTS.jpeg">
+                        </div>
+                    </li>
+                    <!-- Leadership 2 Image -->
+                    <li class="mouse-pos-list-image-inner leadership-hover-2 visible">
+                        <div class="overlay overlay-image lazy"
+                            style="background-color: #B1A994; background-position: center center; background-repeat: no-repeat; background-size: cover;"
+                            data-bg="assets/img/YUVA SANGAM.png">
+                        </div>
+                    </li>
+                </div>
+            </div>
+        </div>
+        <div class="mouse-pos-list-btn no-select"></div>
+        <div class="mouse-pos-list-span no-select">
+            <p>View</p>
+        </div>
         <!-- Hamburger Menu Button -->
         <div class="btn btn-hamburger">
             <div class="btn-click magnetic" data-strength="50" data-strength-text="25">
@@ -357,19 +410,23 @@
                         <h2>Experience <span class="animate-dot">.</span><span class="animate-dot">.</span><span class="animate-dot">.</span></h2>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="flex-col">
+                <ul class="mouse-pos-list-image-wrap" style="list-style: none; padding: 0;">
+                    <li class="experience-hover interaction visible">
                         <div class="stripe" style="margin-top: 2em;"></div>
-                        <h5 style="margin-top: 3em;">May – June 2024</h5>
-                        <h4>Frontend Developer</h4>
-                        <p style="opacity: 0.7; margin-bottom: 0.5em;">Ableon Connect Private Limited</p>
-                        <ul style="list-style: none; padding: 0;">
-                            <li style="margin-bottom: 0.8em;">Developed 20+ responsive web components using analytics insights, significantly boosting overall user engagement.</li>
-                            <li style="margin-bottom: 0.8em;">Collaborated with cross-functional teams to optimize development workflows, successfully reducing deployment time.</li>
-                            <li>Leveraged user feedback to implement UI/UX enhancements, achieving approximately a 10% increase in page dwell time.</li>
-                        </ul>
-                    </div>
-                </div>
+                        <a href="https://drive.google.com/file/d/1Sl_sUawK_31UtQOt-I1EAbtQI5bBytDy/view" target="_blank" class="row" style="text-decoration: none; color: inherit;">
+                            <div class="flex-col">
+                                <h5 style="margin-top: 3em;">May – June 2024</h5>
+                                <h4>Frontend Developer</h4>
+                                <p style="opacity: 0.7; margin-bottom: 0.5em;">Ableon Connect Private Limited</p>
+                                <ul style="list-style: none; padding: 0;">
+                                    <li style="margin-bottom: 0.8em;">Developed 20+ responsive web components using analytics insights, significantly boosting overall user engagement.</li>
+                                    <li style="margin-bottom: 0.8em;">Collaborated with cross-functional teams to optimize development workflows, successfully reducing deployment time.</li>
+                                    <li>Leveraged user feedback to implement UI/UX enhancements, achieving approximately a 10% increase in page dwell time.</li>
+                                </ul>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </section>
         <!-- Achievements & Recognitions Section -->
@@ -381,26 +438,38 @@
                         <!-- <div class="stripe" style="margin-top: 1em;"></div> -->
                     </div>
                 </div>
-                <div class="row" style="margin-top: 2em;">
-                    <div class="flex-col" style="margin-bottom: 2em;">
-                        <h5 style="opacity: 0.5; font-size: 0.75em; margin-bottom: 0.5em;">01</h5>
-                        <div class="stripe" style="margin-bottom: 1em;"></div>
-                        <h4 style="margin-bottom: 0.8em;">Coding Excellence</h4>
-                        <p style="line-height: 1.6;">Solved 650+ DSA problems across LeetCode, Codeforces, and GfG.</p>
-                    </div>
-                    <div class="flex-col" style="margin-bottom: 2em;">
-                        <h5 style="opacity: 0.5; font-size: 0.75em; margin-bottom: 0.5em;">02</h5>
-                        <div class="stripe" style="margin-bottom: 1em;"></div>
-                        <h4 style="margin-bottom: 0.8em;">Hackathon Finalist</h4>
-                        <p style="line-height: 1.6;">Selected as a Finalist at the HPCL-Mittal Energy Limited (HMEL) National Hackathon, competing among 5000+ participants.</p>
-                    </div>
-                    <div class="flex-col" style="margin-bottom: 2em;">
-                        <h5 style="opacity: 0.5; font-size: 0.75em; margin-bottom: 0.5em;">03</h5>
-                        <div class="stripe" style="margin-bottom: 1em;"></div>
-                        <h4 style="margin-bottom: 0.8em;">Freelance Work</h4>
-                        <p style="line-height: 1.6;">Successfully freelanced for 2+ startups, delivering comprehensive design solutions and client-ready assets.</p>
-                    </div>
-                </div>
+                <ul class="mouse-pos-list-image-wrap" style="list-style: none; padding: 0; margin-top: 2em;">
+                    <li class="achievement-hover-1 interaction visible" style="margin-bottom: 2em;">
+                        <div class="stripe" style="margin-bottom: 0;"></div>
+                        <a href="https://codolio.com/profile/HirendraKurche1" target="_blank" style="text-decoration: none; color: inherit; display: block;">
+                            <div class="flex-col">
+                                <h5 style="opacity: 0.5; font-size: 0.75em; margin-bottom: 0.5em; margin-top: 1em;">01</h5>
+                                <h4 style="margin-bottom: 0.8em;">Coding Excellence</h4>
+                                <p style="line-height: 1.6;">Solved 650+ DSA problems across LeetCode, Codeforces, and GfG.</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="achievement-hover-2 interaction visible" style="margin-bottom: 2em;">
+                        <div class="stripe" style="margin-bottom: 0;"></div>
+                        <a href="#" style="text-decoration: none; color: inherit; display: block;">
+                            <div class="flex-col">
+                                <h5 style="opacity: 0.5; font-size: 0.75em; margin-bottom: 0.5em; margin-top: 1em;">02</h5>
+                                <h4 style="margin-bottom: 0.8em;">Hackathon Finalist</h4>
+                                <p style="line-height: 1.6;">Selected as a Finalist at the HPCL-Mittal Energy Limited (HMEL) National Hackathon, competing among 5000+ participants.</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="achievement-hover-3 interaction visible" style="margin-bottom: 2em;">
+                        <div class="stripe" style="margin-bottom: 0;"></div>
+                        <a href="https://www.behance.net/himanshukurche" target="_blank" style="text-decoration: none; color: inherit; display: block;">
+                            <div class="flex-col">
+                                <h5 style="opacity: 0.5; font-size: 0.75em; margin-bottom: 0.5em; margin-top: 1em;">03</h5>
+                                <h4 style="margin-bottom: 0.8em;">Freelance Work</h4>
+                                <p style="line-height: 1.6;">Successfully freelanced for 2+ startups, delivering comprehensive design solutions and client-ready assets.</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </section>
         <!-- Leadership & Responsibilities Section -->
@@ -408,15 +477,24 @@
             <div class="container medium">
                 <div class="row">
                     <div class="flex-col"  style="text-align: center;">
-                        <div class="single-image">
-                            <div class="overlay" data-scroll data-scroll-speed="-1"></div>
+                        <div class="single-image" style="position: relative; width: 100%; height: 400px; overflow: hidden; border-radius: 8px; margin-bottom: 1em;">
+                            <div class="overlay overlay-image lazy" data-scroll data-scroll-speed="-1"
+                                style="background-color: #DCD0C2; background-position: center center; background-repeat: no-repeat; background-size: cover; position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+                                data-bg="assets/img/AUTOMAX EVENTS.jpeg"></div>
                             <div class="overlay"></div>
                         </div>
-                        <p>One of our Co-Founder giving student adivce</p>
+                        <p>Technical Event Coordinator- Automax</p>
+                        <div class="single-image" style="position: relative; width: 100%; height: 400px; overflow: hidden; border-radius: 8px; margin-bottom: 1em; margin-top: 2em;">
+                            <div class="overlay overlay-image lazy" data-scroll data-scroll-speed="-1"
+                                style="background-color: #DCD0C2; background-position: center center; background-repeat: no-repeat; background-size: cover; position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+                                data-bg="assets/img/YUVA SANGAM.png"></div>
+                            <div class="overlay"></div>
+                        </div>
+                        <p>Student Representative- EBSB</p>
                     </div>
                     <div class="flex-col">
                         <h2>Leadership & Responsibilities</h2>
-                        <div style="margin-top: 2em;">
+                        <div class="leadership-hover-1 interaction" style="margin-top: 2em;">
                             <h4>Design Head</h4>
                             <p style="opacity: 0.7; margin-bottom: 0.5em;">Robotics Club & Roobaroo Society, MANIT Bhopal • June 2024 – Present</p>
                             <ul style="list-style: none; padding: 0; margin-bottom: 2em;">
@@ -424,14 +502,14 @@
                                 <li>Mentor a 5-member design team in Photoshop, Figma, and Illustrator to ensure consistent creative delivery.</li>
                             </ul>
                         </div>
-                        <div style="margin-top: 2em;">
+                        <div class="leadership-hover-1 interaction" style="margin-top: 2em;">
                             <h4>Technical Event Coordinator</h4>
                             <p style="opacity: 0.7; margin-bottom: 0.5em;">MANIT Bhopal • March 2024 – Present</p>
                             <ul style="list-style: none; padding: 0; margin-bottom: 2em;">
                                 <li>Coordinate technical competitions for 100+ participants, managing logistics, technical troubleshooting, and evaluation workflows.</li>
                             </ul>
                         </div>
-                        <div style="margin-top: 2em;">
+                        <div class="leadership-hover-2 interaction" style="margin-top: 2em;">
                             <h4>Student Representative</h4>
                             <p style="opacity: 0.7; margin-bottom: 0.5em;">Ministry of Education, EBSB Initiative • 2023</p>
                             <ul style="list-style: none; padding: 0;">
