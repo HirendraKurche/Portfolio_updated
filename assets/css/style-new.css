@@ -1158,7 +1158,40 @@ main.touch .main-wrap {
 
 @media screen and (max-width: 1024px) {
    .large-work-grid {
-      display: none;
+      display: block; /* Keep visible on mobile */
+   }
+   
+   .large-work-grid .work-items h4 {
+      font-size: calc(clamp(2em, 6vw, 3em));
+   }
+   
+   .large-work-grid .row {
+      padding: 1.5em 0;
+   }
+   
+   .large-work-grid .work-items .flex-col:nth-child(1) {
+      width: 70%;
+      padding-left: calc(var(--container-padding) * 0.5);
+   }
+   
+   .large-work-grid .work-items .flex-col:nth-child(2) {
+      width: 30%;
+      padding-right: calc(var(--container-padding) * 0.5);
+   }
+}
+
+@media screen and (max-width: 540px) {
+   .large-work-grid .work-items h4 {
+      font-size: calc(clamp(1.5em, 5vw, 2.5em));
+   }
+   
+   .large-work-grid .work-items .flex-col:nth-child(1) {
+      width: 65%;
+   }
+   
+   .large-work-grid .work-items .flex-col:nth-child(2) {
+      width: 35%;
+      font-size: 0.9em;
    }
 }
 
@@ -1655,7 +1688,7 @@ main.touch .main-wrap {
 
 @media screen and (max-width: 1024px) {
    .work-tiles-home {
-      display: block;
+      display: none; /* Keep hidden on mobile - show work-grid instead */
    }
 
    .work-tiles-home+.center-grid-btn {
